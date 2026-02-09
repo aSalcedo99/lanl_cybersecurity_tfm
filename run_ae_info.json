@@ -1,0 +1,20 @@
+{
+  "model": "Autoencoder",
+  "features": [
+    "total_events",
+    "failed_events",
+    "fail_ratio",
+    "dst_hosts",
+    "src_hosts",
+    "nbhours_events",
+    "nbhours_ratio"
+  ],
+  "scaler": "StandardScaler",
+  "params": {
+    "epochs": 5,
+    "batch_size": 4096,
+    "latent_dim": 3,
+    "optimizer": "Adam",
+    "loss": "MSE"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "model": "IsolationForest",
+  "features": [
+    "total_events",
+    "failed_events",
+    "fail_ratio",
+    "dst_hosts",
+    "src_hosts",
+    "nbhours_events",
+    "nbhours_ratio"
+  ],
+  "scaler": "StandardScaler",
+  "params": {
+    "n_estimators": 200,
+    "contamination": 0.05,
+    "random_state": 42
+  }
+}
